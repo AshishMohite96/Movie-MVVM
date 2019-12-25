@@ -16,7 +16,13 @@ android {
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
+        debug {
+            buildConfigField 'String', "TMDBAPIKey", tmdb_api_key
+            resValue 'string', "tmdb_api_key", tmdb_api_key
+        }
         release {
+            buildConfigField 'String', "TMDBAPIKey", tmdb_api_key
+            resValue 'string', "tmdb_api_key", tmdb_api_key
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
