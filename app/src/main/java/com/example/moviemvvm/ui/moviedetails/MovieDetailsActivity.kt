@@ -1,4 +1,4 @@
-package com.example.moviemvvm.ui
+package com.example.moviemvvm.ui.moviedetails
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -68,7 +68,6 @@ class MovieDetailsActivity : AppCompatActivity() {
     private fun getViewModel(movieId: Int): MovieDetailsViewModel {
         return ViewModelProviders.of(this, object : ViewModelProvider.Factory{
             override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
                 return MovieDetailsViewModel(
                     movieDetailsRepository,
                     movieId

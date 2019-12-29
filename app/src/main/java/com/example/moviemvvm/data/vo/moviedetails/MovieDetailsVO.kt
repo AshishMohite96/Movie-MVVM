@@ -37,7 +37,7 @@ data class MovieDetailsVO(
     @SerializedName("release_date")
     val releaseDate: String,
     @SerializedName("revenue")
-    val revenue: Int,
+    val revenue: Long,
     @SerializedName("runtime")
     val runtime: Int,
     @SerializedName("spoken_languages")
@@ -51,7 +51,7 @@ data class MovieDetailsVO(
     @SerializedName("video")
     val video: Boolean,
     @SerializedName("vote_average")
-    val voteAverage: Int,
+    val voteAverage: Double,
     @SerializedName("vote_count")
     val voteCount: Int
 )
